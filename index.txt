@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join-Bot Inv Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Join-Bot Inv Generator</h1>
+        <p>All generations are stored locally and not stored on our servers.</p>
+        <input type="text" id="clientId" placeholder="Enter Client ID">
+        <button id="generateBtn">Generate Invite Link!</button>
+        <div id="generatedLink" class="hidden">
+            <p>Generated Invite Link:</p>
+            <a href="#" id="inviteLink" target="_blank"></a>
+            <button id="copyBtn">Copy Link</button>
+        </div>
+        <a href="https://github.com/yourusername/yourrepository" target="_blank">Github Source</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
