@@ -53,11 +53,16 @@ footer {
     align-items: center;
     height: 100px; /* Adjust the height as needed */
     background-color: #f8f9fa; /* Example background color */
+    width: 100%; /* Ensure the footer takes up the full width */
+    position: absolute; /* Position the footer at the bottom */
+    bottom: 0; /* Align the footer to the bottom */
 }
 
 .footer-content {
     text-align: center;
     font-size: 0.8em; /* Adjust the font size as needed */
+    width: 100%; /* Ensure the content takes up the full width */
 }
+
 
 }
