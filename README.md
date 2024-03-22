@@ -36,5 +36,5 @@ Once you have copied the user ID, you can paste it in the "Client ID" box on the
 
 By following these steps, you can easily enable Developer Mode and copy user IDs on both desktop and mobile versions of Discord.
 
-[![Join-Bot Inv Generator](https://img.shields.io/badge/Join-Bot%20Inv%20Generator-Go%20to%20Site-blue?style=for-the-badge&logo=discord)](https://jbinvite.brbr.xyz/)
+[![Join-Bot Invite Generator](https://img.shields.io/badge/Join-Bot%20Inv%20Generator-Go%20to%20Site-blue?style=for-the-badge&logo=discord)](https://jbinvite.brbr.xyz/)
 
