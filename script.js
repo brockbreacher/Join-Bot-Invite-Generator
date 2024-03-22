@@ -1,6 +1,7 @@
 // Function to update the year dynamically
 function updateYear() {
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
 }
 
 // Call the function to update the year when the script loads
