@@ -39,7 +39,9 @@ button {
 
 .github-link {
     color: #7289DA; /* Matches the button color */
-    footer {
+}
+
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
