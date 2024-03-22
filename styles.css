@@ -47,9 +47,18 @@ button {
     background-color: #f8f9fa; /* Example background color */
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust the height as needed */
+    background-color: #f8f9fa; /* Example background color */
+}
+
 .footer-content {
     text-align: center;
     font-size: 0.8em; /* Adjust the font size as needed */
 }
+
 
 }
