@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Join-Bot Invite Generator</title>
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<meta property="og:title" content="Join-Bot Invite Generator" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jbinvite.cardboards.net" />
-<meta property="og:image" content="https:jbinvite.cardboards.net/logo.png" />
-<meta property="og:description" content="A simple page to easily generate and display an invite link for a self-hosted Join-Bot Instance with the correct, minimal permissions for the bot." />
-<meta name="theme-color" content="#15FF02">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Join-Bot Invite Generator</h1>
-        <p>All generations are created locally and not stored.</p>
-        <placeholder>Client ID</placeholder>
-        <input type="text" id="clientId" placeholder="Enter Client ID">
-        <placeholder>Permissions</placeholder> <small>- See <a href="https://discordapi.com/permissions.html" target="_blank" class="github-link">discordapi.com</a> to make one.</small>
-        <input type="text" id="permissions" placeholder="Permissions" value="2147503232">
-        <button id="generateBtn">Generate Invite Link!</button>
-        <div id="generatedLink" class="hidden">
-            <p>Generated Invite Link:</p>
-            <a href="#" id="inviteLink" target="_blank"></a>
-            <button id="copyBtn">Copy Link</button>
+    <head>
+        <title>Discord Bot Invite Generator</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta property="og:title" content="Discord Bot Invite Generator" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kindkid27.github.io/Join-Bot-Invite-Generator/" />
+        <meta property="og:image" content="https://kindkid27.github.io/Join-Bot-Invite-Generator/logo.png" />
+        <meta property="og:description" content="A simple page to easily generate and display an invite link for discord bots." />
+        <meta name="theme-color" content="#15FF02">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Discord Bot Invite Generator</h1>
+            <p>All links are created client-sided and not stored.</p>
+            <placeholder>Client ID</placeholder>
+            <input type="text" id="clientId" placeholder="Enter Client ID">
+            <placeholder>Permissions</placeholder> <small>- See <a href="https://discordapi.com/permissions.html" target="_blank" class="github-link">discordapi.com</a> to make one.</small>
+            <input type="text" id="permissions" placeholder="Permissions" value="2147503232">
+            <button id="generateBtn">Generate Invite Link!</button>
+            <div id="generatedLink" class="hidden">
+                <p>Generated Invite Link:</p>
+                <a href="#" id="inviteLink" target="_blank"></a>
+                <button id="copyBtn">Copy Link</button>
+            </div>
+            <p>Original Github Source: <a href="https://github.com/brockbreacher/Join-Bot-Invite-Generator" target="_blank" class="github-link">brockbreacher/Join-Bot-Invite-Generator</a></p>
+            <p>Modified Github Source: <a href="https://github.com/kindkid27/Discord-Bot-Invite-Generator" target="_blank" class="github-link">kindkid27/Discord-Bot-Invite-Generator</a></p>
         </div>
-        <p>Github Source: <a href="https://github.com/brockbreacher/Join-Bot-Invite-Generator" target="_blank" class="github-link">Github Source</a></p>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <p>Created By: brockbreacher</p>
-            <p>Copyright &copy; 2024 - <span id="currentYear"></span> Cardboard Services</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
+        <footer>
+            <div class="footer-content">
+                <p>Created By: brockbreacher & KindKid27</p>
+                <p>This version is not by brockbreacher or Cardboard Services.</p>
+                <p>The changes in this fork: Permission Customization & Discord Bot Invite Branding</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
