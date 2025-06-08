@@ -38,3 +38,8 @@ By following these steps, you can easily enable Developer Mode and copy user IDs
 
 [Join-Bot Invite Generator](https://jbinvite.cardboards.net)
 
+
+
+This tool is ONLY intended to generate the permissions required for hosting a personal instance of [Join-Bot](https://github.com/brockbreacher/join-bot)
+
+For a more customizable version of this tool check out this fork created by [kindkid27](https://github.com/kindkid27/Discord-Bot-Invite-Generator)
