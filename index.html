@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Join-Bot Invite Generator</title>
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<meta property="og:title" content="Join-Bot Invite Generator" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://jbinvite.cardboards.net" />
-<meta property="og:image" content="https:jbinvite.cardboards.net/logo.png" />
-<meta property="og:description" content="A simple page to easily generate and display an invite link for a self-hosted Join-Bot Instance with the correct, minimal permissions for the bot." />
-<meta name="theme-color" content="#15FF02">
+    <title>Cardboard Services Bots Invite Generator</title>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta property="og:title" content="Cardboard Services Bots Invite Generator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jbinvite.cardboards.net" />
+    <meta property="og:image" content="https:jbinvite.cardboards.net/logo.png" />
+    <meta property="og:description" content="Generate invite links for Cardboard Services bots with the correct permissions." />
+    <meta name="theme-color" content="#15FF02">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Join-Bot Invite Generator</h1>
+        <h1>Cardboard Services Bots Invite Generator</h1>
         <p>All generations are created locally and not stored.</p>
+        <div class="bot-selection">
+            <label>
+                <input type="radio" name="botType" value="join-bot" checked> Join-Bot
+            </label>
+            <label>
+                <input type="radio" name="botType" value="accept-bot"> Accept-Bot
+            </label>
+        </div>
         <input type="text" id="clientId" placeholder="Enter Client ID">
         <button id="generateBtn">Generate Invite Link!</button>
         <div id="generatedLink" class="hidden">

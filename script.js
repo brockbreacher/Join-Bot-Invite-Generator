@@ -10,10 +10,19 @@ updateYear();
 // Function to generate the invite link
 document.getElementById('generateBtn').addEventListener('click', function() {
     const clientId = document.getElementById('clientId').value;
-    const inviteLink = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&permissions=2147503232&scope=bot%20applications.commands`;
+    const botType = document.querySelector('input[name="botType"]:checked').value;
+    
+    let permissions;
+    if (botType === 'join-bot') {
+        permissions = '2147503232'; // Original Join-Bot permissions
+    } else {
+        permissions = '268443664'; // Accept-Bot permissions: View Channels, Manage Roles, Send Messages, Use Application Commands
+    }
+    
+    const inviteLink = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&permissions=${permissions}&scope=bot%20applications.commands`;
     document.getElementById('inviteLink').href = inviteLink;
     document.getElementById('inviteLink').textContent = inviteLink;
-    document.getElementById('generatedLink').style.display = 'block'; // Ensure this line is present to show the generated link container
+    document.getElementById('generatedLink').style.display = 'block';
 });
 
 // Function to copy the invite link
