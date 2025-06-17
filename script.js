@@ -14,9 +14,9 @@ document.getElementById('generateBtn').addEventListener('click', function() {
     
     let permissions;
     if (botType === 'join-bot') {
-        permissions = '2147503232'; // Original Join-Bot permissions
+        permissions = '2147503232'; // Join-Bot permissions
     } else {
-        permissions = '268443664'; // Accept-Bot permissions: View Channels, Manage Roles, Send Messages, Use Application Commands
+        permissions = '268443664'; // Accept-Bot permissions
     }
     
     const inviteLink = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&permissions=${permissions}&scope=bot%20applications.commands`;
