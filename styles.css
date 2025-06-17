@@ -35,6 +35,13 @@ input[type="text"], button {
     margin-bottom: 10px;
 }
 
+#clientId {
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
+
 button {
     background-color: #7289DA;
     color: white;
