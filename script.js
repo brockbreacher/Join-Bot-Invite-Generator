@@ -67,7 +67,7 @@ clientIdInput.addEventListener('input', () => {
     }
 });
 
-// Generate invite link
+// Generate invite link with proper permissions
 generateBtn.addEventListener('click', async function() {
     const clientId = clientIdInput.value.trim();
     
@@ -86,11 +86,11 @@ generateBtn.addEventListener('click', async function() {
     let permissions, scope;
     
     if (botType === 'join-bot') {
-        permissions = '2147503232';
+        permissions = '2147503232'; // Join-Bot permissions
         scope = 'bot%20applications.commands';
     } else {
-        permissions = '268443664';
-        scope = 'bot%20applications.commands';
+        permissions = '268443664'; // Accept-Bot permissions
+        scope = 'bot%20applications.commands'; // Required for slash commands
     }
     
     currentInviteLink = `https://discord.com/oauth2/authorize?client_id=${clientId}&permissions=${permissions}&scope=${scope}`;
@@ -104,7 +104,7 @@ inviteBtn.addEventListener('click', function() {
     }
 });
 
-// 100% Reliable Copy Functionality
+// Copy Functionality
 copyBtn.addEventListener('click', function() {
     if (!currentInviteLink) return;
     
