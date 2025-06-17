@@ -1,5 +1,5 @@
-# Join-Bot Invite Generator
-A simple page to easily generate and display an invite link for a self-hosted Join-Bot Instance with the correct, minimal permissions for the bot.
+# Cardboard Services Bot Invite Generator
+A simple page to easily generate and display an invite link for a self-hosted Join-Bot or Accept-Bot Instance with the correct, minimal permissions for the bot.
 
 Instructions:
 =============
@@ -32,14 +32,12 @@ Instructions:
 
 ### Using the Copied ID
 
-Once you have copied the user ID, you can paste it in the "Client ID" box on the site to get the minimal permissions needed for your Join-Bot instace
+Once you have copied the user ID, you can select a bot, then paste the ID in the "Client ID" box on the site to get the minimal permissions needed for your Bot instance.
 
-By following these steps, you can easily enable Developer Mode and copy user IDs on both desktop and mobile versions of Discord.
-
-[Join-Bot Invite Generator](https://jbinvite.cardboards.net)
+[Cardboard Services Bot Invite Generator](https://jbinvite.cardboards.net)
 
 ### Customizable Fork
 
-This tool is ONLY intended to generate the permissions required for hosting a personal instance of [Join-Bot](https://github.com/brockbreacher/join-bot)
+This tool is ONLY intended to generate the permissions required for hosting a personal instance of [Join-Bot](https://github.com/brockbreacher/join-bot) or [Accept-Bot](https://github.com/brockbreacher/accept-bot)
 
 For a more customizable version of this tool check out this fork created by [kindkid27](https://github.com/kindkid27/Discord-Bot-Invite-Generator)
