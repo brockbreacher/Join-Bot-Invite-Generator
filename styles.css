@@ -33,13 +33,17 @@ input[type="text"], button {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 4px;
+    border: 2px solid #2F3136;
+    background-color: #2F3136;
+    color: white;
 }
 
 #clientId {
     max-width: 300px;
     margin: 10px auto;
-    display: block;
     text-align: center;
+    transition: border-color 0.3s;
 }
 
 button {
@@ -47,16 +51,34 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+button:hover {
+    filter: brightness(1.1);
 }
 
 #generatedLink {
     margin-top: 20px;
+    text-align: center;
 }
 
-#inviteLink {
-    color: #7289DA;
-    text-decoration: none;
-    word-break: break-all;
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#inviteBtn {
+    background-color: #43B581;
+    width: 200px;
+}
+
+#copyBtn {
+    background-color: #7289DA;
+    width: 200px;
 }
 
 .github-link {
@@ -68,11 +90,56 @@ footer {
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: #36393E;
+    margin-top: 30px;
 }
 
 .footer-content {
     text-align: center;
     font-size: 0.8em;
     width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Validation States */
+.validating {
+    border-color: #FFA500 !important;
+}
+
+.valid {
+    border-color: #15FF02 !important;
+}
+
+.invalid {
+    border-color: #ff3860 !important;
+}
+
+.status-text {
+    font-size: 0.9em;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    min-height: 18px;
+}
+
+.validating-text { color: #FFA500; }
+.valid-text { color: #15FF02; }
+.invalid-text { color: #ff3860; }
+
+/* Copy fallback styles */
+#manualCopy {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    background: #2F3136;
+    color: white;
+    border: 1px solid #7289DA;
+}
+
+.hidden-textarea {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
 }

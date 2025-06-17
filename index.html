@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <title>Cardboard Services Bots Invite Generator</title>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Cardboard Services Bots Invite Generator" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jbinvite.cardboards.net" />
-    <meta property="og:image" content="https:jbinvite.cardboards.net/logo.png" />
+    <meta property="og:url" content="https://invite.cardboards.net" />
+    <meta property="og:image" content="https://invite.cardboards.net/logo.png" />
     <meta property="og:description" content="Generate invite links for Cardboard Services bots with the correct permissions." />
     <meta name="theme-color" content="#15FF02">
     <link rel="stylesheet" href="styles.css">
@@ -16,6 +16,7 @@
     <div class="container">
         <h1>Cardboard Services Bots Invite Generator</h1>
         <p>All generations are created locally and not stored.</p>
+        
         <div class="bot-selection">
             <label>
                 <input type="radio" name="botType" value="join-bot" checked> Join-Bot
@@ -24,21 +25,29 @@
                 <input type="radio" name="botType" value="accept-bot"> Accept-Bot
             </label>
         </div>
-        <input type="text" id="clientId" placeholder="Enter Client ID">
+        
+        <input type="text" id="clientId" placeholder="Enter Discord Client ID (18-20 digits)">
+        <p id="validationStatus" class="status-text"></p>
+        
         <button id="generateBtn">Generate Invite Link!</button>
+        
         <div id="generatedLink" class="hidden">
-            <p>Generated Invite Link:</p>
-            <a href="#" id="inviteLink" target="_blank"></a>
-            <button id="copyBtn">Copy Link</button>
+            <div class="action-buttons">
+                <button id="inviteBtn">Invite Bot</button>
+                <button id="copyBtn">Copy Link</button>
+            </div>
         </div>
-        <p>Github Source: <a href="https://github.com/brockbreacher/Cardboard-Services-Bot-Invite-Generator" target="_blank" class="github-link">Github Source</a></p>
+        
+        <p>Github Source: <a href="https://github.com/brockbreacher/cardboard-services-bot-invite-generator" target="_blank" class="github-link">Github Source</a></p>
     </div>
+    
     <footer>
         <div class="footer-content">
             <p>Created By: brockbreacher</p>
             <p>Copyright &copy; 2024 - <span id="currentYear"></span> Cardboard Services</p>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
